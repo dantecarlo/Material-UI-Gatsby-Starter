@@ -1,10 +1,10 @@
-import React from 'react'
-import { makeStyles } from '@material-ui/core/styles'
-import List from '@material-ui/core/List'
-import ListItem from '@material-ui/core/ListItem'
-import Button from '../../Shared/components/Button'
-import Header from './Header'
-import headersStyle from '../../../assets/jss/material-kit-pro-react/views/sectionsSections/headersStyle'
+import React from "react"
+import { makeStyles } from "@material-ui/core/styles"
+import List from "@material-ui/core/List"
+import ListItem from "@material-ui/core/ListItem"
+import Button from "../../Shared/components/Button"
+import Header from "./Header"
+import headersStyle from "../../../assets/jss/material-kit-pro-react/views/sectionsSections/headersStyle"
 
 const useStyles = makeStyles(headersStyle)
 

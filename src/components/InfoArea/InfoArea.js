@@ -1,40 +1,40 @@
-import React from "react";
+import React from "react"
 // nodejs library to set properties for components
-import PropTypes from "prop-types";
+import PropTypes from "prop-types"
 // nodejs library that concatenates classes
-import classNames from "classnames";
+import classNames from "classnames"
 // @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles";
-import Icon from "@material-ui/core/Icon";
+import { makeStyles } from "@material-ui/core/styles"
+import Icon from "@material-ui/core/Icon"
 
-import styles from "assets/jss/material-kit-pro-react/components/infoStyle.js";
+import styles from "assets/jss/material-kit-pro-react/components/infoStyle.js"
 
-const useStyles = makeStyles(styles);
+const useStyles = makeStyles(styles)
 
 export default function InfoArea(props) {
-  const { title, description, iconColor, vertical, className } = props;
-  const classes = useStyles();
+  const { title, description, iconColor, vertical, className } = props
+  const classes = useStyles()
   const iconWrapper = classNames({
     [classes.iconWrapper]: true,
     [classes[iconColor]]: true,
-    [classes.iconWrapperVertical]: vertical
-  });
+    [classes.iconWrapperVertical]: vertical,
+  })
   const iconClasses = classNames({
     [classes.icon]: true,
-    [classes.iconVertical]: vertical
-  });
+    [classes.iconVertical]: vertical,
+  })
   const infoAreaClasses = classNames({
     [classes.infoArea]: true,
-    [className]: className !== undefined
-  });
-  let icon = null;
+    [className]: className !== undefined,
+  })
+  let icon = null
   switch (typeof props.icon) {
     case "string":
-      icon = <Icon className={iconClasses}>{props.icon}</Icon>;
-      break;
+      icon = <Icon className={iconClasses}>{props.icon}</Icon>
+      break
     default:
-      icon = <props.icon className={iconClasses} />;
-      break;
+      icon = <props.icon className={iconClasses} />
+      break
   }
   return (
     <div className={infoAreaClasses}>
@@ -44,12 +44,12 @@ export default function InfoArea(props) {
         <div className={classes.description}>{description}</div>
       </div>
     </div>
-  );
+  )
 }
 
 InfoArea.defaultProps = {
-  iconColor: "gray"
-};
+  iconColor: "gray",
+}
 
 InfoArea.propTypes = {
   icon: PropTypes.oneOfType([PropTypes.object, PropTypes.string]).isRequired,
@@ -62,8 +62,8 @@ InfoArea.propTypes = {
     "success",
     "info",
     "rose",
-    "gray"
+    "gray",
   ]),
   vertical: PropTypes.bool,
-  className: PropTypes.string
-};
+  className: PropTypes.string,
+}

@@ -1,16 +1,16 @@
-import React from "react";
+import React from "react"
 // nodejs library that concatenates classes
-import classNames from "classnames";
+import classNames from "classnames"
 // nodejs library to set properties for components
-import PropTypes from "prop-types";
+import PropTypes from "prop-types"
 
 // @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles";
-import Button from "@material-ui/core/Button";
+import { makeStyles } from "@material-ui/core/styles"
+import Button from "@material-ui/core/Button"
 
-import styles from "assets/jss/material-kit-pro-react/components/buttonStyle.js";
+import styles from "assets/jss/material-kit-pro-react/components/buttonStyle.js"
 
-const useStyles = makeStyles(styles);
+const useStyles = makeStyles(styles)
 
 const RegularButton = React.forwardRef((props, ref) => {
   const {
@@ -27,8 +27,8 @@ const RegularButton = React.forwardRef((props, ref) => {
     fileButton,
     className,
     ...rest
-  } = props;
-  const classes = useStyles();
+  } = props
+  const classes = useStyles()
   const btnClasses = classNames({
     [classes.button]: true,
     [classes[size]]: size,
@@ -41,14 +41,14 @@ const RegularButton = React.forwardRef((props, ref) => {
     [classes.link]: link,
     [classes.justIcon]: justIcon,
     [classes.fileButton]: fileButton,
-    [className]: className
-  });
+    [className]: className,
+  })
   return (
     <Button {...rest} ref={ref} className={btnClasses}>
       {children}
     </Button>
-  );
-});
+  )
+})
 
 RegularButton.propTypes = {
   color: PropTypes.oneOf([
@@ -72,7 +72,7 @@ RegularButton.propTypes = {
     "dribbble",
     "reddit",
     "instagram",
-    "transparent"
+    "transparent",
   ]),
   size: PropTypes.oneOf(["sm", "lg"]),
   simple: PropTypes.bool,
@@ -84,7 +84,7 @@ RegularButton.propTypes = {
   justIcon: PropTypes.bool,
   fileButton: PropTypes.bool,
   children: PropTypes.node,
-  className: PropTypes.string
-};
+  className: PropTypes.string,
+}
 
-export default RegularButton;
+export default RegularButton
