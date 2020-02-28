@@ -1,21 +1,21 @@
 /*eslint-disable*/
-import React from "react"
+import React from 'react'
 
 // @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles"
+import withStyles from '@material-ui/core/styles/withStyles'
 // @material-ui/icons
-import GridContainer from "components/Grid/GridContainer.jsx"
-import GridItem from "components/Grid/GridItem.jsx"
-import Button from "components/CustomButtons/Button.jsx"
+import GridContainer from 'components/Grid/GridContainer.js'
+import GridItem from 'components/Grid/GridItem.js'
+import Button from 'components/CustomButtons/Button.js'
 // React icons
 import {
   FaTwitter,
   FaFacebookSquare,
   FaGooglePlusG,
   FaGithub,
-} from "react-icons/fa"
+} from 'react-icons/fa'
 // core components
-import downloadStyle from "assets/jss/material-kit-react/views/componentsSections/downloadStyle.jsx"
+import downloadStyle from 'assets/jss/material-kit-react/views/componentsSections/downloadStyle.jsx'
 
 class SectionDownload extends React.Component {
   render() {
@@ -58,12 +58,12 @@ class SectionDownload extends React.Component {
             <GridItem xs={12} sm={12} md={8}>
               <h2>Want more?</h2>
               <h4>
-                We've launched{" "}
+                We've launched{' '}
                 <a
                   href="https://www.creative-tim.com/product/material-kit-pro-react"
                   target="_blank"
                 >
-                  Material Kit PRO React{" "}
+                  Material Kit PRO React{' '}
                 </a>
                 .It has a huge number of components, sections and example pages.
                 Start Your Development With A Badass Material-UI nspired by
@@ -89,7 +89,7 @@ class SectionDownload extends React.Component {
               </Button>
             </GridItem>
           </GridContainer>
-          <div className={classes.textCenter + " " + classes.sharingArea}>
+          <div className={classes.textCenter + ' ' + classes.sharingArea}>
             <GridContainer justify="center">
               <h3>Thank you for supporting us!</h3>
             </GridContainer>

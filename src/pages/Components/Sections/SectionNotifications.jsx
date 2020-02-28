@@ -1,14 +1,14 @@
-import React from "react"
+import React from 'react'
 
 // @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles"
+import withStyles from '@material-ui/core/styles/withStyles'
 // @material-ui/icons
-import Check from "@material-ui/icons/Check"
-import Warning from "@material-ui/icons/Warning"
+import Check from '@material-ui/icons/Check'
+import Warning from '@material-ui/icons/Warning'
 // core components
-import SnackbarContent from "components/Snackbar/SnackbarContent.jsx"
-import Clearfix from "components/Clearfix/Clearfix.jsx"
-import notificationsStyles from "assets/jss/material-kit-react/views/componentsSections/notificationsStyles.jsx"
+import SnackbarContent from 'components/Snackbar/SnackbarContent.js'
+import Clearfix from 'components/Clearfix/Clearfix.js'
+import notificationsStyles from 'assets/jss/material-kit-react/views/componentsSections/notificationsStyles.jsx'
 
 class SectionNotifications extends React.Component {
   render() {

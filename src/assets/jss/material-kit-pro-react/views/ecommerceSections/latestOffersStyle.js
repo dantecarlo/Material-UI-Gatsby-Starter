@@ -6,9 +6,9 @@ import {
   grayColor,
   dangerColor,
   mlAuto,
-} from "assets/jss/material-kit-pro-react.js"
+} from 'assets/jss/material-kit-pro-react.js'
 
-import tooltipsStyle from "assets/jss/material-kit-pro-react/tooltipsStyle.js"
+import tooltipsStyle from 'assets/jss/material-kit-pro-react/tooltipsStyle.js'
 
 const styles = {
   cardTitle,
@@ -16,24 +16,24 @@ const styles = {
   ...tooltipsStyle,
   section: {
     ...section,
-    padding: "70px 0px",
+    padding: '70px 0px',
   },
   coloredShadow,
   cardDescription: {
     color: grayColor[0],
-    textAlign: "center",
+    textAlign: 'center',
   },
   mlAuto,
   priceContainer: {
-    display: "inline-flex",
+    display: 'inline-flex',
   },
   price: {
-    fontSize: "18px",
+    fontSize: '18px',
     color: grayColor[22],
   },
   priceOld: {
-    fontSize: "16px",
-    textDecoration: "line-through",
+    fontSize: '16px',
+    textDecoration: 'line-through',
   },
   priceNew: {
     color: dangerColor[0],
@@ -42,7 +42,7 @@ const styles = {
     color: grayColor[0],
   },
   textCenter: {
-    textAlign: "center",
+    textAlign: 'center',
   },
 }
 

@@ -1,9 +1,9 @@
-import React from "react"
-import PropTypes from "prop-types"
-import Helmet from "react-helmet"
-import urljoin from "url-join"
+import React from 'react'
+import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
+import urljoin from 'url-join'
 
-import siteData from "../../data/SiteConfig"
+import siteData from '../../data/SiteConfig'
 
 function SEO({ description, lang, title }) {
   const { config } = siteData
@@ -25,11 +25,11 @@ function SEO({ description, lang, title }) {
   const URL = urljoin(config.siteUrl, config.pathPrefix)
   const schemaOrgJSONLD = [
     {
-      "@context": "http://schema.org",
-      "@type": "WebSite",
+      '@context': 'http://schema.org',
+      '@type': 'WebSite',
       url: URL,
       name: metaTitle,
-      alternateName: config.siteTitleAlt ? config.siteTitleAlt : "",
+      alternateName: config.siteTitleAlt ? config.siteTitleAlt : '',
     },
   ]
 
@@ -51,14 +51,14 @@ function SEO({ description, lang, title }) {
       <meta property="og:image" content={image} />
       <meta
         property="fb:app_id"
-        content={config.siteFBAppID ? config.siteFBAppID : ""}
+        content={config.siteFBAppID ? config.siteFBAppID : ''}
       />
 
       {/* Twitter Card tags */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta
         name="twitter:creator"
-        content={config.userTwitter ? config.userTwitter : ""}
+        content={config.userTwitter ? config.userTwitter : ''}
       />
       <meta name="twitter:title" content={metaTitle} />
       <meta name="twitter:description" content={description} />

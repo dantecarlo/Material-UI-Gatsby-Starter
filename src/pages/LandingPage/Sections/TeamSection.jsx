@@ -1,27 +1,27 @@
-import React from "react"
+import React from 'react'
 // nodejs library that concatenates classes
-import classNames from "classnames"
+import classNames from 'classnames'
 // @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles"
+import withStyles from '@material-ui/core/styles/withStyles'
 
 // @material-ui/icons
 
 // React icons
-import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa"
+import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa'
 
 // core components
-import GridContainer from "components/Grid/GridContainer.jsx"
-import GridItem from "components/Grid/GridItem.jsx"
-import Button from "components/CustomButtons/Button.jsx"
-import Card from "components/Card/Card.jsx"
-import CardBody from "components/Card/CardBody.jsx"
-import CardFooter from "components/Card/CardFooter.jsx"
+import GridContainer from 'components/Grid/GridContainer.js'
+import GridItem from 'components/Grid/GridItem.js'
+import Button from 'components/CustomButtons/Button.js'
+import Card from 'components/Card/Card.js'
+import CardBody from 'components/Card/CardBody.js'
+import CardFooter from 'components/Card/CardFooter.js'
 
-import teamStyle from "assets/jss/material-kit-react/views/landingPageSections/teamStyle.jsx"
+import teamStyle from 'assets/jss/material-kit-react/views/landingPageSections/teamStyle.jsx'
 
-import team1 from "assets/img/faces/avatar.jpg"
-import team2 from "assets/img/faces/christian.jpg"
-import team3 from "assets/img/faces/kendall.jpg"
+import team1 from 'assets/img/faces/avatar.jpg'
+import team2 from 'assets/img/faces/christian.jpg'
+import team3 from 'assets/img/faces/kendall.jpg'
 
 class TeamSection extends React.Component {
   render() {

@@ -1,18 +1,18 @@
-import React from "react"
+import React from 'react'
 // react components for routing our app without refresh
-import { Link } from "gatsby"
+import { Link } from 'gatsby'
 // @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles"
+import withStyles from '@material-ui/core/styles/withStyles'
 // @material-ui/icons
 
 // core components
-import GridContainer from "components/Grid/GridContainer.jsx"
-import GridItem from "components/Grid/GridItem.jsx"
-import Button from "components/CustomButtons/Button.jsx"
-import exampleStyle from "assets/jss/material-kit-react/views/componentsSections/exampleStyle.jsx"
+import GridContainer from 'components/Grid/GridContainer.js'
+import GridItem from 'components/Grid/GridItem.js'
+import Button from 'components/CustomButtons/Button.js'
+import exampleStyle from 'assets/jss/material-kit-react/views/componentsSections/exampleStyle.jsx'
 
-import landing from "assets/img/landing.jpg"
-import profile from "assets/img/profile.jpg"
+import landing from 'assets/img/landing.jpg'
+import profile from 'assets/img/profile.jpg'
 
 class SectionExamples extends React.Component {
   render() {
@@ -28,9 +28,9 @@ class SectionExamples extends React.Component {
                   alt="..."
                   className={
                     classes.imgRaised +
-                    " " +
+                    ' ' +
                     classes.imgRounded +
-                    " " +
+                    ' ' +
                     classes.imgFluid
                   }
                 />
@@ -46,9 +46,9 @@ class SectionExamples extends React.Component {
                   alt="..."
                   className={
                     classes.imgRaised +
-                    " " +
+                    ' ' +
                     classes.imgRounded +
-                    " " +
+                    ' ' +
                     classes.imgFluid
                   }
                 />

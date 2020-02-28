@@ -7,22 +7,22 @@ import {
   roseColor,
   whiteColor,
   grayColor,
-} from "assets/jss/material-kit-pro-react.js"
+} from 'assets/jss/material-kit-pro-react.js'
 
 const badgeStyle = {
   badge: {
-    marginRight: "3px",
-    borderRadius: "12px",
-    padding: "5px 12px",
-    textTransform: "uppercase",
-    fontSize: "10px",
-    fontWeight: "500",
-    lineHeight: "1",
+    marginRight: '3px',
+    borderRadius: '12px',
+    padding: '5px 12px',
+    textTransform: 'uppercase',
+    fontSize: '10px',
+    fontWeight: '500',
+    lineHeight: '1',
     color: whiteColor,
-    textAlign: "center",
-    whiteSpace: "nowrap",
-    verticalAlign: "baseline",
-    display: "inline-block",
+    textAlign: 'center',
+    whiteSpace: 'nowrap',
+    verticalAlign: 'baseline',
+    display: 'inline-block',
   },
   primary: {
     backgroundColor: primaryColor[0],

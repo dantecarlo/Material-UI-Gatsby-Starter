@@ -1,16 +1,16 @@
-import React from "react"
+import React from 'react'
 // nodejs library to set properties for components
-import PropTypes from "prop-types"
+import PropTypes from 'prop-types'
 // @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles"
-import ExpansionPanel from "@material-ui/core/ExpansionPanel"
-import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary"
-import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails"
+import { makeStyles } from '@material-ui/core/styles'
+import ExpansionPanel from '@material-ui/core/ExpansionPanel'
+import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary'
+import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails'
 
 // @material-ui/icons
-import ExpandMore from "@material-ui/icons/ExpandMore"
+import ExpandMore from '@material-ui/icons/ExpandMore'
 
-import styles from "assets/jss/material-kit-pro-react/components/accordionStyle.js"
+import styles from 'assets/jss/material-kit-pro-react/components/accordionStyle.js'
 
 const useStyles = makeStyles(styles)
 
@@ -59,10 +59,10 @@ export default function Accordion(props) {
               expandIcon={<ExpandMore />}
               classes={{
                 root: `${classes.expansionPanelSummary} ${
-                  classes[activeColor + "ExpansionPanelSummary"]
+                  classes[activeColor + 'ExpansionPanelSummary']
                 }`,
                 expanded: `${classes.expansionPanelSummaryExpaned} ${
-                  classes[activeColor + "ExpansionPanelSummaryExpaned"]
+                  classes[activeColor + 'ExpansionPanelSummaryExpaned']
                 }`,
                 content: classes.expansionPanelSummaryContent,
                 expandIcon: classes.expansionPanelSummaryExpandIcon,
@@ -82,7 +82,7 @@ export default function Accordion(props) {
 
 Accordion.defaultProps = {
   active: -1,
-  activeColor: "primary",
+  activeColor: 'primary',
 }
 
 Accordion.propTypes = {
@@ -98,12 +98,12 @@ Accordion.propTypes = {
     })
   ).isRequired,
   activeColor: PropTypes.oneOf([
-    "primary",
-    "secondary",
-    "warning",
-    "danger",
-    "success",
-    "info",
-    "rose",
+    'primary',
+    'secondary',
+    'warning',
+    'danger',
+    'success',
+    'info',
+    'rose',
   ]),
 }

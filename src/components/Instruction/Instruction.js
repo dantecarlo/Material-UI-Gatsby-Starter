@@ -1,15 +1,15 @@
-import React from "react"
-import PropTypes from "prop-types"
-import cx from "classnames"
+import React from 'react'
+import PropTypes from 'prop-types'
+import cx from 'classnames'
 
 // @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles"
+import { makeStyles } from '@material-ui/core/styles'
 
 // core components
-import GridContainer from "components/Grid/GridContainer.js"
-import GridItem from "components/Grid/GridItem"
+import GridContainer from 'components/Grid/GridContainer.js'
+import GridItem from 'components/Grid/GridItem'
 
-import styles from "assets/jss/material-kit-pro-react/components/instructionStyle.js"
+import styles from 'assets/jss/material-kit-pro-react/components/instructionStyle.js'
 
 const useStyles = makeStyles(styles)
 
@@ -42,7 +42,7 @@ export default function Instruction(props) {
 }
 
 Instruction.defaultProps = {
-  imageAlt: "...",
+  imageAlt: '...',
 }
 
 Instruction.propTypes = {

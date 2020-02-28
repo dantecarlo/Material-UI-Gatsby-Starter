@@ -3,18 +3,18 @@ import {
   description,
   mrAuto,
   mlAuto,
-} from "assets/jss/material-kit-pro-react.js"
+} from 'assets/jss/material-kit-pro-react.js'
 
 const servicesStyle = {
   title,
   mrAuto,
   mlAuto,
   services: {
-    paddingTop: "10px",
-    paddingBottom: "80px",
+    paddingTop: '10px',
+    paddingBottom: '80px',
   },
   textCenter: {
-    textAlign: "center",
+    textAlign: 'center',
   },
   description,
 }

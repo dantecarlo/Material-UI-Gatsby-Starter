@@ -1,14 +1,14 @@
-import React from "react"
+import React from 'react'
 // nodejs library to set properties for components
-import PropTypes from "prop-types"
+import PropTypes from 'prop-types'
 // nodejs library that concatenates classes
-import classNames from "classnames"
+import classNames from 'classnames'
 
 // @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles"
-import Button from "@material-ui/core/Button"
+import { makeStyles } from '@material-ui/core/styles'
+import Button from '@material-ui/core/Button'
 
-import styles from "assets/jss/material-kit-pro-react/components/paginationStyle.js"
+import styles from 'assets/jss/material-kit-pro-react/components/paginationStyle.js'
 
 const useStyles = makeStyles(styles)
 
@@ -51,7 +51,7 @@ export default function Pagination(props) {
 }
 
 Pagination.defaultProps = {
-  color: "primary",
+  color: 'primary',
 }
 
 Pagination.propTypes = {
@@ -64,6 +64,6 @@ Pagination.propTypes = {
       onClick: PropTypes.func,
     })
   ).isRequired,
-  color: PropTypes.oneOf(["primary", "info", "success", "warning", "danger"]),
+  color: PropTypes.oneOf(['primary', 'info', 'success', 'warning', 'danger']),
   className: PropTypes.string,
 }

@@ -5,7 +5,7 @@ import {
   whiteColor,
   infoColor,
   hexToRgb,
-} from "assets/jss/material-kit-pro-react.js"
+} from 'assets/jss/material-kit-pro-react.js'
 
 const pricingStyle = {
   mrAuto,
@@ -13,19 +13,19 @@ const pricingStyle = {
   cardTitle,
   cardTitleWhite: {
     ...cardTitle,
-    color: whiteColor + " !important",
-    "& small": {
-      color: "rgba(" + hexToRgb(whiteColor) + ",0.8)!important",
+    color: whiteColor + ' !important',
+    '& small': {
+      color: 'rgba(' + hexToRgb(whiteColor) + ',0.8)!important',
     },
   },
   textCenter: {
-    textAlign: "center",
+    textAlign: 'center',
   },
   pricingSection: {
-    padding: "80px 0px",
+    padding: '80px 0px',
   },
   textInfo: {
-    color: infoColor[0] + " !important",
+    color: infoColor[0] + ' !important',
   },
 }
 

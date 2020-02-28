@@ -1,37 +1,37 @@
-import React from "react"
+import React from 'react'
 // plugin that creates slider
-import nouislider from "nouislider"
+import nouislider from 'nouislider'
 // @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles"
-import InputAdornment from "@material-ui/core/InputAdornment"
-import FormControlLabel from "@material-ui/core/FormControlLabel"
-import Checkbox from "@material-ui/core/Checkbox"
-import Radio from "@material-ui/core/Radio"
-import Switch from "@material-ui/core/Switch"
+import withStyles from '@material-ui/core/styles/withStyles'
+import InputAdornment from '@material-ui/core/InputAdornment'
+import FormControlLabel from '@material-ui/core/FormControlLabel'
+import Checkbox from '@material-ui/core/Checkbox'
+import Radio from '@material-ui/core/Radio'
+import Switch from '@material-ui/core/Switch'
 // @material-ui/icons
-import Favorite from "@material-ui/icons/Favorite"
-import People from "@material-ui/icons/People"
-import Check from "@material-ui/icons/Check"
-import FiberManualRecord from "@material-ui/icons/FiberManualRecord"
+import Favorite from '@material-ui/icons/Favorite'
+import People from '@material-ui/icons/People'
+import Check from '@material-ui/icons/Check'
+import FiberManualRecord from '@material-ui/icons/FiberManualRecord'
 // React icons
-import { FaUsers } from "react-icons/fa"
+import { FaUsers } from 'react-icons/fa'
 // core components
-import GridContainer from "components/Grid/GridContainer.jsx"
-import GridItem from "components/Grid/GridItem.jsx"
-import Button from "components/CustomButtons/Button.jsx"
-import CustomInput from "components/CustomInput/CustomInput.jsx"
-import CustomLinearProgress from "components/CustomLinearProgress/CustomLinearProgress.jsx"
-import Paginations from "components/Pagination/Pagination.jsx"
-import Badge from "components/Badge/Badge.jsx"
+import GridContainer from 'components/Grid/GridContainer.js'
+import GridItem from 'components/Grid/GridItem.js'
+import Button from 'components/CustomButtons/Button.js'
+import CustomInput from 'components/CustomInput/CustomInput.js'
+import CustomLinearProgress from 'components/CustomLinearProgress/CustomLinearProgress.js'
+import Paginations from 'components/Pagination/Pagination.js'
+import Badge from 'components/Badge/Badge.js'
 
-import basicsStyle from "assets/jss/material-kit-react/views/componentsSections/basicsStyle.jsx"
+import basicsStyle from 'assets/jss/material-kit-react/views/componentsSections/basicsStyle.jsx'
 
 class SectionBasics extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
       checked: [24, 22],
-      selectedEnabled: "b",
+      selectedEnabled: 'b',
       checkedA: true,
       checkedB: false,
     }
@@ -148,7 +148,7 @@ class SectionBasics extends React.Component {
                 <CustomInput
                   id="regular"
                   inputProps={{
-                    placeholder: "Regular",
+                    placeholder: 'Regular',
                   }}
                   formControlProps={{
                     fullWidth: true,
@@ -228,7 +228,7 @@ class SectionBasics extends React.Component {
                 <div
                   className={
                     classes.checkboxAndRadio +
-                    " " +
+                    ' ' +
                     classes.checkboxAndRadioHorizontal
                   }
                 >
@@ -249,7 +249,7 @@ class SectionBasics extends React.Component {
                 <div
                   className={
                     classes.checkboxAndRadio +
-                    " " +
+                    ' ' +
                     classes.checkboxAndRadioHorizontal
                   }
                 >
@@ -273,7 +273,7 @@ class SectionBasics extends React.Component {
                 <div
                   className={
                     classes.checkboxAndRadio +
-                    " " +
+                    ' ' +
                     classes.checkboxAndRadioHorizontal
                   }
                 >
@@ -297,7 +297,7 @@ class SectionBasics extends React.Component {
                 <div
                   className={
                     classes.checkboxAndRadio +
-                    " " +
+                    ' ' +
                     classes.checkboxAndRadioHorizontal
                   }
                 >
@@ -329,14 +329,14 @@ class SectionBasics extends React.Component {
                 <div
                   className={
                     classes.checkboxAndRadio +
-                    " " +
+                    ' ' +
                     classes.checkboxAndRadioHorizontal
                   }
                 >
                   <FormControlLabel
                     control={
                       <Radio
-                        checked={this.state.selectedEnabled === "a"}
+                        checked={this.state.selectedEnabled === 'a'}
                         onChange={this.handleChangeEnabled}
                         value="a"
                         name="radio button enabled"
@@ -363,14 +363,14 @@ class SectionBasics extends React.Component {
                 <div
                   className={
                     classes.checkboxAndRadio +
-                    " " +
+                    ' ' +
                     classes.checkboxAndRadioHorizontal
                   }
                 >
                   <FormControlLabel
                     control={
                       <Radio
-                        checked={this.state.selectedEnabled === "b"}
+                        checked={this.state.selectedEnabled === 'b'}
                         onChange={this.handleChangeEnabled}
                         value="b"
                         name="radio button enabled"
@@ -397,7 +397,7 @@ class SectionBasics extends React.Component {
                 <div
                   className={
                     classes.checkboxAndRadio +
-                    " " +
+                    ' ' +
                     classes.checkboxAndRadioHorizontal
                   }
                 >
@@ -432,7 +432,7 @@ class SectionBasics extends React.Component {
                 <div
                   className={
                     classes.checkboxAndRadio +
-                    " " +
+                    ' ' +
                     classes.checkboxAndRadioHorizontal
                   }
                 >
@@ -472,7 +472,7 @@ class SectionBasics extends React.Component {
                     control={
                       <Switch
                         checked={this.state.checkedA}
-                        onChange={this.handleChange("checkedA")}
+                        onChange={this.handleChange('checkedA')}
                         value="checkedA"
                         classes={{
                           switchBase: classes.switchBase,
@@ -494,7 +494,7 @@ class SectionBasics extends React.Component {
                     control={
                       <Switch
                         checked={this.state.checkedB}
-                        onChange={this.handleChange("checkedB")}
+                        onChange={this.handleChange('checkedB')}
                         value="checkedB"
                         classes={{
                           switchBase: classes.switchBase,
@@ -535,19 +535,19 @@ class SectionBasics extends React.Component {
                   variant="determinate"
                   color="success"
                   value={100}
-                  style={{ width: "35%", display: "inline-block" }}
+                  style={{ width: '35%', display: 'inline-block' }}
                 />
                 <CustomLinearProgress
                   variant="determinate"
                   color="warning"
                   value={100}
-                  style={{ width: "20%", display: "inline-block" }}
+                  style={{ width: '20%', display: 'inline-block' }}
                 />
                 <CustomLinearProgress
                   variant="determinate"
                   color="danger"
                   value={25}
-                  style={{ width: "45%", display: "inline-block" }}
+                  style={{ width: '45%', display: 'inline-block' }}
                 />
               </GridItem>
               <GridItem xs={12} sm={12} md={6}>
@@ -557,25 +557,25 @@ class SectionBasics extends React.Component {
                 <Paginations
                   pages={[
                     { text: 1 },
-                    { text: "..." },
+                    { text: '...' },
                     { text: 5 },
                     { text: 6 },
                     { active: true, text: 7 },
                     { text: 8 },
                     { text: 9 },
-                    { text: "..." },
+                    { text: '...' },
                     { text: 12 },
                   ]}
                 />
                 <Paginations
                   pages={[
-                    { text: "PREV" },
+                    { text: 'PREV' },
                     { text: 1 },
                     { text: 2 },
                     { active: true, text: 3 },
                     { text: 4 },
                     { text: 5 },
-                    { text: "NEXT" },
+                    { text: 'NEXT' },
                   ]}
                   color="info"
                 />
