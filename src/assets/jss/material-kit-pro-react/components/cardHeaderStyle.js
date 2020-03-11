@@ -7,7 +7,7 @@ import {
   roseCardHeader,
   blackColor,
   hexToRgb,
-} from 'assets/jss/material-kit-pro-react.js'
+} from 'assets/jss/material-kit-pro-react'
 
 const cardHeaderStyle = {
   cardHeader: {
@@ -36,14 +36,13 @@ const cardHeaderStyle = {
     borderRadius: '6px',
     '& img': {
       width: '100%',
+      height: '205px',
+      objectFit: 'cover',
       borderRadius: '6px',
       pointerEvents: 'none',
-      boxShadow:
-        '0 5px 15px -8px rgba(' +
-        hexToRgb(blackColor) +
-        ', 0.24), 0 8px 10px -5px rgba(' +
-        hexToRgb(blackColor) +
-        ', 0.2)',
+      boxShadow: `0 5px 15px -8px rgba(${hexToRgb(
+        blackColor
+      )}, 0.24), 0 8px 10px -5px rgba(${hexToRgb(blackColor)}, 0.2)`,
     },
     '& a': {
       display: 'block',

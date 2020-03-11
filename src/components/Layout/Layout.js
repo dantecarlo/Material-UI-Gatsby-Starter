@@ -5,11 +5,12 @@ import { makeStyles } from '@material-ui/core/styles'
 import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
 
-import Header from 'components/Header/Header.js'
-import HeaderLinks from 'components/Header/HeaderLinks.js'
-import Button from 'components/CustomButtons/Button.js'
+import Header from 'components/Header/Header'
+import Button from 'components/CustomButtons/Button'
 
-import headersStyle from 'assets/jss/material-kit-pro-react/views/sectionsSections/headersStyle.js'
+import headersStyle from 'assets/jss/material-kit-pro-react/views/sectionsSections/headersStyle'
+import SectionSocial from './components/SectionSocial'
+import LayoutFooter from './components/LayoutFooter'
 
 const useStyles = makeStyles(headersStyle)
 
@@ -30,8 +31,12 @@ const Layout = ({ children }) => {
       /> */}
       <Header
         fixed
-        brand="Creative Tim"
-        color="dark"
+        brand="NT Schools"
+        color="transparent"
+        changeColorOnScroll={{
+          height: 400,
+          color: 'white',
+        }}
         links={
           <List className={`${classes.list} ${classes.mlAuto}`}>
             <ListItem className={classes.listItem}>
@@ -77,7 +82,8 @@ const Layout = ({ children }) => {
           </List>
         }
       />
-      <main>{children}</main>
+      {children}
+      <LayoutFooter />
     </>
   )
 }

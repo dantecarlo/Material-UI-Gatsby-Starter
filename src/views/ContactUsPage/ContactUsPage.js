@@ -19,16 +19,16 @@ import PinDrop from '@material-ui/icons/PinDrop'
 import Phone from '@material-ui/icons/Phone'
 import BusinessCenter from '@material-ui/icons/BusinessCenter'
 // core components
-import Header from 'components/Header/Header.js'
-import HeaderLinks from 'components/Header/HeaderLinks.js'
-import GridContainer from 'components/Grid/GridContainer.js'
-import GridItem from 'components/Grid/GridItem.js'
-import InfoArea from 'components/InfoArea/InfoArea.js'
-import CustomInput from 'components/CustomInput/CustomInput.js'
-import Button from 'components/CustomButtons/Button.js'
-import Footer from 'components/Footer/Footer.js'
+import Header from 'components/Header/Header'
+import HeaderLinks from 'components/Header/HeaderLinks'
+import GridContainer from 'components/Grid/GridContainer'
+import GridItem from 'components/Grid/GridItem'
+import InfoArea from 'components/InfoArea/InfoArea'
+import CustomInput from 'components/CustomInput/CustomInput'
+import Button from 'components/CustomButtons/Button'
+import Footer from 'components/Footer/Footer'
 
-import contactUsStyle from 'assets/jss/material-kit-pro-react/views/contactUsStyle.js'
+import contactUsStyle from 'assets/jss/material-kit-pro-react/views/contactUsStyle'
 
 const CustomSkinMap = withScriptjs(
   withGoogleMap(() => (

@@ -8,7 +8,7 @@ import { makeStyles } from '@material-ui/core/styles'
 // @material-ui/icons
 
 // core components
-import styles from 'assets/jss/material-kit-pro-react/components/cardHeaderStyle.js'
+import styles from 'assets/jss/material-kit-pro-react/components/cardHeaderStyle'
 
 const useStyles = makeStyles(styles)
 
@@ -27,7 +27,7 @@ export default function CardHeader(props) {
   const classes = useStyles()
   const cardHeaderClasses = classNames({
     [classes.cardHeader]: true,
-    [classes[color + 'CardHeader']]: color,
+    [classes[`${color}CardHeader`]]: color,
     [classes.cardHeaderPlain]: plain,
     [classes.cardHeaderImage]: image,
     [classes.cardHeaderContact]: contact,

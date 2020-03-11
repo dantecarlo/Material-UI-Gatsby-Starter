@@ -3,9 +3,9 @@ import {
   whiteColor,
   mlAuto,
   hexToRgb,
-} from 'assets/jss/material-kit-pro-react.js'
+} from 'assets/jss/material-kit-pro-react'
 
-import tooltip from 'assets/jss/material-kit-pro-react/tooltipsStyle.js'
+import tooltip from 'assets/jss/material-kit-pro-react/tooltipsStyle'
 
 const headerLinksStyle = theme => ({
   list: {
@@ -150,7 +150,7 @@ const headerLinksStyle = theme => ({
   navLinkActive: {
     '&, &:hover, &:focus,&:active ': {
       color: 'inherit',
-      backgroundColor: 'rgba(' + hexToRgb(whiteColor) + ', 0.1)',
+      backgroundColor: `rgba(${hexToRgb(whiteColor)}, 0.1)`,
     },
   },
   icons: {

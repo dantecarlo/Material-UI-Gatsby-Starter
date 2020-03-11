@@ -67,16 +67,15 @@ function SEO({ description, lang, title }) {
   )
 }
 
-SEO.defaultProps = {
-  lang: `en`,
-  description: undefined,
-  title: undefined,
-}
-
 SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   title: PropTypes.string,
 }
 
+SEO.defaultProps = {
+  lang: `en`,
+  description: undefined,
+  title: undefined,
+}
 export default SEO

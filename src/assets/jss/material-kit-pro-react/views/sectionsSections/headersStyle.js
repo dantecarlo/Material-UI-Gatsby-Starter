@@ -1,4 +1,4 @@
-import headerLinksStyle from 'assets/jss/material-kit-pro-react/components/headerLinksStyle.js'
+import headerLinksStyle from 'assets/jss/material-kit-pro-react/components/headerLinksStyle'
 import {
   container,
   mrAuto,
@@ -6,7 +6,7 @@ import {
   blackColor,
   whiteColor,
   hexToRgb,
-} from 'assets/jss/material-kit-pro-react.js'
+} from 'assets/jss/material-kit-pro-react'
 
 const headersSection = theme => ({
   ...headerLinksStyle(theme),
@@ -46,7 +46,7 @@ const headersSection = theme => ({
     MsFlexAlign: 'center',
     alignItems: 'center',
     '&:before': {
-      background: 'rgba(' + hexToRgb(blackColor) + ', 0.5)',
+      background: `rgba(${hexToRgb(blackColor)}, 0.5)`,
     },
     '&:after,&:before': {
       position: 'absolute',
@@ -62,14 +62,11 @@ const headersSection = theme => ({
   iframeContainer: {
     '& > iframe': {
       width: '100%',
-      boxShadow:
-        '0 16px 38px -12px rgba(' +
-        hexToRgb(blackColor) +
-        ', 0.56), 0 4px 25px 0px rgba(' +
-        hexToRgb(blackColor) +
-        ', 0.12), 0 8px 10px -5px rgba(' +
-        hexToRgb(blackColor) +
-        ', 0.2)',
+      boxShadow: `0 16px 38px -12px rgba(${hexToRgb(
+        blackColor
+      )}, 0.56), 0 4px 25px 0px rgba(${hexToRgb(
+        blackColor
+      )}, 0.12), 0 8px 10px -5px rgba(${hexToRgb(blackColor)}, 0.2)`,
     },
   },
   mrAuto,

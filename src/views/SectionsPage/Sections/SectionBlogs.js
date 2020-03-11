@@ -4,17 +4,17 @@ import { makeStyles } from '@material-ui/core/styles'
 // @material-ui/icons
 import TrendingUp from '@material-ui/icons/TrendingUp'
 // core components
-import GridContainer from 'components/Grid/GridContainer.js'
-import GridItem from 'components/Grid/GridItem.js'
-import Card from 'components/Card/Card.js'
-import CardBody from 'components/Card/CardBody.js'
-import CardHeader from 'components/Card/CardHeader.js'
-import Info from 'components/Typography/Info.js'
-import Danger from 'components/Typography/Danger.js'
-import Success from 'components/Typography/Success.js'
-import Button from 'components/CustomButtons/Button.js'
+import GridContainer from 'components/Grid/GridContainer'
+import GridItem from 'components/Grid/GridItem'
+import Card from 'components/Card/Card'
+import CardBody from 'components/Card/CardBody'
+import CardHeader from 'components/Card/CardHeader'
+import Info from 'components/Typography/Info'
+import Danger from 'components/Typography/Danger'
+import Success from 'components/Typography/Success'
+import Button from 'components/CustomButtons/Button'
 
-import blogsStyle from 'assets/jss/material-kit-pro-react/views/sectionsSections/blogsStyle.js'
+import blogsStyle from 'assets/jss/material-kit-pro-react/views/sectionsSections/blogsStyle'
 
 import cardBlog4 from 'assets/img/examples/card-blog4.jpg'
 import office2 from 'assets/img/office2.jpg'
@@ -38,7 +38,7 @@ export default function SectionBlogs({ ...rest }) {
               xs={12}
               sm={10}
               md={10}
-              className={classes.mlAuto + ' ' + classes.mrAuto}
+              className={`${classes.mlAuto} ${classes.mrAuto}`}
             >
               <h2 className={classes.title}>Latest Blogposts</h2>
               <br />
@@ -151,7 +151,7 @@ export default function SectionBlogs({ ...rest }) {
               xs={12}
               sm={12}
               md={10}
-              className={classes.mlAuto + ' ' + classes.mrAuto}
+              className={`${classes.mlAuto} ${classes.mrAuto}`}
             >
               <h2 className={classes.title}>Latest Blogposts 2</h2>
               <br />
@@ -279,7 +279,7 @@ export default function SectionBlogs({ ...rest }) {
               xs={12}
               sm={10}
               md={10}
-              className={classes.mlAuto + ' ' + classes.mrAuto}
+              className={`${classes.mlAuto} ${classes.mrAuto}`}
             >
               <h2 className={classes.title}>Latest Blogposts 3</h2>
               <br />
@@ -459,7 +459,7 @@ export default function SectionBlogs({ ...rest }) {
               xs={12}
               sm={8}
               md={8}
-              className={classes.mlAuto + ' ' + classes.mrAuto}
+              className={`${classes.mlAuto} ${classes.mrAuto}`}
             >
               <h2 className={classes.title}>Latest Blogposts 4</h2>
               <br />
@@ -483,12 +483,12 @@ export default function SectionBlogs({ ...rest }) {
                     </a>
                   </h3>
                   <h5 className={classes.description}>
-                    Don{"'"}t be scared of the truth because we need to restart
-                    the human foundation in truth And I love you like Kanye
-                    loves Kanye I love Rick Owens’ bed design but the back is
-                    too high for the beams and angle of the ceiling I also
-                    wanted to point out that it’s the first album to go number 1
-                    off of streaming...
+                    Don't be scared of the truth because we need to restart the
+                    human foundation in truth And I love you like Kanye loves
+                    Kanye I love Rick Owens’ bed design but the back is too high
+                    for the beams and angle of the ceiling I also wanted to
+                    point out that it’s the first album to go number 1 off of
+                    streaming...
                   </h5>
                   <Button round color="primary">
                     Read More
@@ -515,12 +515,12 @@ export default function SectionBlogs({ ...rest }) {
                     </a>
                   </h3>
                   <h5 className={classes.description}>
-                    Don{"'"}t be scared of the truth because we need to restart
-                    the human foundation in truth And I love you like Kanye
-                    loves Kanye I love Rick Owens’ bed design but the back is
-                    too high for the beams and angle of the ceiling I also
-                    wanted to point out that it’s the first album to go number 1
-                    off of streaming...
+                    Don't be scared of the truth because we need to restart the
+                    human foundation in truth And I love you like Kanye loves
+                    Kanye I love Rick Owens’ bed design but the back is too high
+                    for the beams and angle of the ceiling I also wanted to
+                    point out that it’s the first album to go number 1 off of
+                    streaming...
                   </h5>
                   <Button round color="primary">
                     Read More

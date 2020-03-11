@@ -7,7 +7,7 @@ import {
   grayColor,
   section,
   hexToRgb,
-} from 'assets/jss/material-kit-pro-react.js'
+} from 'assets/jss/material-kit-pro-react'
 
 const componentsStyle = {
   main,
@@ -38,7 +38,7 @@ const componentsStyle = {
   },
   title: {
     ...title,
-    color: whiteColor + '  !important',
+    color: `${whiteColor}  !important`,
   },
   link: {
     textDecoration: 'none',
@@ -58,7 +58,7 @@ const componentsStyle = {
     borderRadius: '3px',
     color: grayColor[18],
     lineHeight: '22px',
-    boxShadow: '0px 5px 5px -2px rgba(' + hexToRgb(grayColor[25]) + ',0.4)',
+    boxShadow: `0px 5px 5px -2px rgba(${hexToRgb(grayColor[25])},0.4)`,
   },
   section: {
     ...section,

@@ -74,28 +74,28 @@ export default function SectionCards() {
     }
   })
   const addStylesForRotatingCards = () => {
-    var rotatingCards = document.getElementsByClassName(classes.cardRotate)
+    const rotatingCards = document.getElementsByClassName(classes.cardRotate)
     for (let i = 0; i < rotatingCards.length; i++) {
-      var rotatingCard = rotatingCards[i]
-      var cardFront = rotatingCard.getElementsByClassName(classes.front)[0]
-      var cardBack = rotatingCard.getElementsByClassName(classes.back)[0]
+      const rotatingCard = rotatingCards[i]
+      const cardFront = rotatingCard.getElementsByClassName(classes.front)[0]
+      const cardBack = rotatingCard.getElementsByClassName(classes.back)[0]
       cardFront.style.height = 'unset'
       cardFront.style.width = 'unset'
       cardBack.style.height = 'unset'
       cardBack.style.width = 'unset'
-      var rotatingWrapper = rotatingCard.parentElement
-      var cardWidth = rotatingCard.parentElement.offsetWidth
-      var cardHeight = rotatingCard.children[0].children[0].offsetHeight
-      rotatingWrapper.style.height = cardHeight + 'px'
-      rotatingWrapper.style['margin-bottom'] = 30 + 'px'
+      const rotatingWrapper = rotatingCard.parentElement
+      const cardWidth = rotatingCard.parentElement.offsetWidth
+      const cardHeight = rotatingCard.children[0].children[0].offsetHeight
+      rotatingWrapper.style.height = `${cardHeight}px`
+      rotatingWrapper.style['margin-bottom'] = `${30}px`
       cardFront.style.height = 'unset'
       cardFront.style.width = 'unset'
       cardBack.style.height = 'unset'
       cardBack.style.width = 'unset'
-      cardFront.style.height = cardHeight + 35 + 'px'
-      cardFront.style.width = cardWidth + 'px'
-      cardBack.style.height = cardHeight + 35 + 'px'
-      cardBack.style.width = cardWidth + 'px'
+      cardFront.style.height = `${cardHeight + 35}px`
+      cardFront.style.width = `${cardWidth}px`
+      cardBack.style.height = `${cardHeight + 35}px`
+      cardBack.style.width = `${cardWidth}px`
     }
   }
   return (
@@ -132,7 +132,7 @@ export default function SectionCards() {
                         <h6 className={classes.cardCategory}>FASHION</h6>
                       </Info>
                       <div className={classes.cardDescription}>
-                        Don{"'"}t be scared of the truth because we need to
+                        Don&apos;t be scared of the truth because we need to
                         restart the human foundation in truth And I love you
                         like Kanye loves Kanye I love Rick Owens’ bed design but
                         the back is...
@@ -147,8 +147,8 @@ export default function SectionCards() {
                       </h5>
                       <h4 className={classes.cardTitleWhite}>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
-                          {'"'}You Don{"'"}t Have to Sacrifice Joy to Build a
-                          Fabulous Business and Life{'"'}
+                          "You Don&apos;t Have to Sacrifice Joy to Build a
+                          Fabulous Business and Life"
                         </a>
                       </h4>
                     </CardBody>
@@ -158,13 +158,13 @@ export default function SectionCards() {
                           <img
                             src={avatar}
                             alt="..."
-                            className={classes.imgRaised + ' ' + classes.avatar}
+                            className={`${classes.imgRaised} ${classes.avatar}`}
                           />
                           <span>Tania Andrew</span>
                         </a>
                       </div>
                       <div
-                        className={classes.statsWhite + ' ' + classes.mlAuto}
+                        className={`${classes.statsWhite} ${classes.mlAuto}`}
                       >
                         <Favorite />
                         2.4K ·
@@ -194,12 +194,12 @@ export default function SectionCards() {
                           <img
                             src={christian}
                             alt="..."
-                            className={classes.imgRaised + ' ' + classes.avatar}
+                            className={`${classes.imgRaised} ${classes.avatar}`}
                           />
                           <span>Lord Alex</span>
                         </a>
                       </div>
-                      <div className={classes.stats + ' ' + classes.mlAuto}>
+                      <div className={`${classes.stats} ${classes.mlAuto}`}>
                         <Favorite />
                         345 ·
                         <ChatBubble />
@@ -230,7 +230,7 @@ export default function SectionCards() {
                         </a>
                       </h4>
                       <p className={classes.cardDescription}>
-                        Don{"'"}t be scared of the truth because we need to
+                        Don&apos;t be scared of the truth because we need to
                         restart the human foundation in truth And I love you
                         like Kanye loves Kanye I love Rick Owens’ bed design but
                         the back is...
@@ -242,12 +242,12 @@ export default function SectionCards() {
                           <img
                             src={marc}
                             alt="..."
-                            className={classes.imgRaised + ' ' + classes.avatar}
+                            className={`${classes.imgRaised} ${classes.avatar}`}
                           />
                           <span>Mike John</span>
                         </a>
                       </div>
-                      <div className={classes.stats + ' ' + classes.mlAuto}>
+                      <div className={`${classes.stats} ${classes.mlAuto}`}>
                         <Schedule />5 min read
                       </div>
                     </CardFooter>
@@ -285,12 +285,12 @@ export default function SectionCards() {
                           <img
                             src={marc}
                             alt="..."
-                            className={classes.imgRaised + ' ' + classes.avatar}
+                            className={`${classes.imgRaised} ${classes.avatar}`}
                           />
                           <span>Mike John</span>
                         </a>
                       </div>
-                      <div className={classes.stats + ' ' + classes.mlAuto}>
+                      <div className={`${classes.stats} ${classes.mlAuto}`}>
                         <Schedule />5 min read
                       </div>
                     </CardFooter>
@@ -303,19 +303,17 @@ export default function SectionCards() {
                       </h5>
                       <h4 className={classes.cardTitleWhite}>
                         <a href="#pablo" onClick={e => e.preventDefault()}>
-                          {'"'}Focus on Your Employees{'"'}
+                          "Focus on Your Employees"
                         </a>
                       </h4>
                       <p className={classes.cardDescriptionWhite}>
-                        Don{"'"}t be scared of the truth because we need to
+                        Don&apos;t be scared of the truth because we need to
                         restart the human foundation in truth And I love you
                         like Kanye loves Kanye I love Rick Owens’ bed design but
                         the back is...
                       </p>
                       <div
-                        className={
-                          classes.stats + ' ' + classes.justifyContentCenter
-                        }
+                        className={`${classes.stats} ${classes.justifyContentCenter}`}
                       >
                         <Button color="white" round>
                           Read Article
@@ -357,7 +355,7 @@ export default function SectionCards() {
                         <h6 className={classes.cardCategory}>WEB DESIGNER</h6>
                       </Info>
                       <p className={classes.cardDescription}>
-                        Don{"'"}t be scared of the truth because we need to
+                        Don&apos;t be scared of the truth because we need to
                         restart the human foundation in truth And I love you
                         like Kanye loves Kanye I love Rick Owens’ bed design but
                         the back is...
@@ -396,9 +394,7 @@ export default function SectionCards() {
                     <CardBody>
                       <h4 className={classes.cardTitle}>Alec Thompson</h4>
                       <h6
-                        className={
-                          classes.cardCategory + ' ' + classes.cardDescription
-                        }
+                        className={`${classes.cardCategory} ${classes.cardDescription}`}
                       >
                         CEO / CO-FOUNDER
                       </h6>
@@ -428,15 +424,13 @@ export default function SectionCards() {
                     </CardAvatar>
                     <CardBody>
                       <h6
-                        className={
-                          classes.cardCategory + ' ' + classes.cardDescription
-                        }
+                        className={`${classes.cardCategory} ${classes.cardDescription}`}
                       >
                         CEO / CO-FOUNDER
                       </h6>
                       <h4 className={classes.cardTitle}>Alec Thompson</h4>
                       <p className={classes.cardDescription}>
-                        Don{"'"}t be scared of the truth because we need to
+                        Don&apos;t be scared of the truth because we need to
                         restart the human foundation in truth And I love you
                         like Kanye loves Kanye I love Rick Owens’ bed design but
                         the back is...
@@ -473,7 +467,7 @@ export default function SectionCards() {
                         </h3>
                       </a>
                       <p className={classes.cardDescriptionWhite}>
-                        Don{"'"}t be scared of the truth because we need to
+                        Don&apos;t be scared of the truth because we need to
                         restart the human foundation in truth And I love you
                         like Kanye loves Kanye I love Rick Owens’ bed design but
                         the back is...
@@ -500,7 +494,7 @@ export default function SectionCards() {
                         </h3>
                       </a>
                       <p className={classes.cardDescriptionWhite}>
-                        Don{"'"}t be scared of the truth because we need to
+                        Don&apos;t be scared of the truth because we need to
                         restart the human foundation in truth And I love you
                         like Kanye loves Kanye I love Rick Owens’ bed design but
                         the back is...
@@ -526,13 +520,7 @@ export default function SectionCards() {
                   <Card pricing>
                     <CardBody pricing>
                       <h6
-                        className={
-                          classes.cardCategory +
-                          ' ' +
-                          classes.cardDescription +
-                          ' ' +
-                          classes.marginBottom20
-                        }
+                        className={`${classes.cardCategory} ${classes.cardDescription} ${classes.marginBottom20}`}
                       >
                         SMALL COMPANY
                       </h6>
@@ -540,9 +528,7 @@ export default function SectionCards() {
                         <People className={classes.iconInfo} />
                       </div>
                       <h3
-                        className={
-                          classes.cardTitle + ' ' + classes.marginTop30
-                        }
+                        className={`${classes.cardTitle} ${classes.marginTop30}`}
                       >
                         $29
                       </h3>
@@ -560,16 +546,12 @@ export default function SectionCards() {
                   <Card pricing color="primary">
                     <CardBody pricing>
                       <div
-                        className={
-                          classes.iconWrapper + ' ' + classes.iconWrapperColor
-                        }
+                        className={`${classes.iconWrapper} ${classes.iconWrapperColor}`}
                       >
                         <Business className={classes.iconWhite} />
                       </div>
                       <h3
-                        className={
-                          classes.cardTitleWhite + ' ' + classes.marginTop30
-                        }
+                        className={`${classes.cardTitleWhite} ${classes.marginTop30}`}
                       >
                         $69
                       </h3>
@@ -671,9 +653,7 @@ export default function SectionCards() {
                 <div className={classes.rotatingCardContainer}>
                   <Card background className={classes.cardRotate}>
                     <div
-                      className={
-                        classes.front + ' ' + classes.wrapperBackground
-                      }
+                      className={`${classes.front} ${classes.wrapperBackground}`}
                       style={{
                         backgroundImage: `url(${cardBlog5})`,
                       }}
@@ -688,7 +668,7 @@ export default function SectionCards() {
                           </h3>
                         </a>
                         <p className={classes.cardDescriptionWhite}>
-                          Don{"'"}t be scared of the truth because we need to
+                          Don&apos;t be scared of the truth because we need to
                           restart the human foundation in truth And I love you
                           like Kanye loves Kanye I love Rick Owens’ bed design
                           but the back is...
@@ -696,7 +676,7 @@ export default function SectionCards() {
                       </CardBody>
                     </div>
                     <div
-                      className={classes.back + ' ' + classes.wrapperBackground}
+                      className={`${classes.back} ${classes.wrapperBackground}`}
                       style={{
                         backgroundImage: `url(${cardBlog5})`,
                       }}
@@ -740,7 +720,7 @@ export default function SectionCards() {
                           </a>
                         </h4>
                         <p className={classes.cardDescription}>
-                          Don{"'"}t be scared of the truth because we need to
+                          Don&apos;t be scared of the truth because we need to
                           restart the human foundation in truth And I love you
                           like Kanye loves Kanye I love Rick Owens’ bed design
                           but the back is...
@@ -776,19 +756,19 @@ export default function SectionCards() {
               <GridItem xs={12} sm={6} md={6} lg={4}>
                 <div className={classes.rotatingCardContainer}>
                   <Card color="rose" className={classes.cardRotate}>
-                    <div className={classes.front + ' ' + classes.wrapperRose}>
+                    <div className={`${classes.front} ${classes.wrapperRose}`}>
                       <CardBody color className={classes.cardBodyRotate}>
                         <h5 className={classes.cardCategorySocialWhite}>
                           <i className="fab fa-dribbble" /> Dribbble
                         </h5>
                         <h4 className={classes.cardTitleWhite}>
                           <a href="#pablo" onClick={e => e.preventDefault()}>
-                            {'"'}Dribbble just acquired Crew, a very interesting
-                            startup...{'"'}
+                            "Dribbble just acquired Crew, a very interesting
+                            startup..."
                           </a>
                         </h4>
                         <p className={classes.cardDescriptionWhite}>
-                          Don{"'"}t be scared of the truth because we need to
+                          Don&apos;t be scared of the truth because we need to
                           restart the human foundation in truth And I love you
                           like Kanye loves Kanye I love Rick Owens’ bed design
                           but the back is...
@@ -800,15 +780,13 @@ export default function SectionCards() {
                             <img
                               src={avatar}
                               alt="..."
-                              className={
-                                classes.imgRaised + ' ' + classes.avatar
-                              }
+                              className={`${classes.imgRaised} ${classes.avatar}`}
                             />
                             <span>Tania Andrew</span>
                           </a>
                         </div>
                         <div
-                          className={classes.statsWhite + ' ' + classes.mlAuto}
+                          className={`${classes.statsWhite} ${classes.mlAuto}`}
                         >
                           <Favorite />
                           2.4K ·
@@ -817,15 +795,15 @@ export default function SectionCards() {
                         </div>
                       </CardFooter>
                     </div>
-                    <div className={classes.back + ' ' + classes.wrapperRose}>
+                    <div className={`${classes.back} ${classes.wrapperRose}`}>
                       <CardBody className={classes.cardBodyRotate}>
                         <h5 className={classes.cardCategorySocialWhite}>
                           <i className="fab fa-dribbble" /> Dribbble
                         </h5>
                         <h4 className={classes.cardTitleWhite}>
                           <a href="#pablo" onClick={e => e.preventDefault()}>
-                            {'"'}Dribbble just acquired Crew, a very interesting
-                            startup...{'"'}
+                            "Dribbble just acquired Crew, a very interesting
+                            startup..."
                           </a>
                         </h4>
                         <div>
@@ -848,13 +826,7 @@ export default function SectionCards() {
             <GridContainer>
               <GridItem xs={12} sm={6} md={6} lg={4}>
                 <div
-                  className={
-                    classes.rotatingCardContainer +
-                    ' ' +
-                    classes.manualRotate +
-                    ' ' +
-                    activeRotate1
-                  }
+                  className={`${classes.rotatingCardContainer} ${classes.manualRotate} ${activeRotate1}`}
                 >
                   <Card className={classes.cardRotate}>
                     <div className={classes.front}>
@@ -867,12 +839,12 @@ export default function SectionCards() {
                         </Success>
                         <h4 className={classes.cardTitle}>
                           <a href="#pablo" onClick={e => e.preventDefault()}>
-                            {'"'}This card is doing a full rotation, click on
-                            the rotate button{'"'}
+                            "This card is doing a full rotation, click on the
+                            rotate button"
                           </a>
                         </h4>
                         <p className={classes.cardDescription}>
-                          Don{"'"}t be scared of the truth because we need to
+                          Don&apos;t be scared of the truth because we need to
                           restart the human foundation in truth And I love you
                           like Kanye loves Kanye I love Rick Owens’ bed design
                           but the back is...
@@ -922,19 +894,11 @@ export default function SectionCards() {
               </GridItem>
               <GridItem xs={12} sm={6} md={6} lg={4}>
                 <div
-                  className={
-                    classes.rotatingCardContainer +
-                    ' ' +
-                    classes.manualRotate +
-                    ' ' +
-                    activeRotate2
-                  }
+                  className={`${classes.rotatingCardContainer} ${classes.manualRotate} ${activeRotate2}`}
                 >
                   <Card className={classes.cardRotate}>
                     <div
-                      className={
-                        classes.front + ' ' + classes.wrapperBackground
-                      }
+                      className={`${classes.front} ${classes.wrapperBackground}`}
                       style={{ backgroundImage: `url(${cardBlog6})` }}
                     >
                       <CardBody background className={classes.cardBodyRotate}>
@@ -948,7 +912,7 @@ export default function SectionCards() {
                           </h3>
                         </a>
                         <p className={classes.cardDescriptionWhite}>
-                          Don{"'"}t be scared of the truth because we need to
+                          Don&apos;t be scared of the truth because we need to
                           restart the human...
                         </p>
                         <div className={classes.textCenter}>
@@ -965,7 +929,7 @@ export default function SectionCards() {
                       </CardBody>
                     </div>
                     <div
-                      className={classes.back + ' ' + classes.wrapperBackground}
+                      className={`${classes.back} ${classes.wrapperBackground}`}
                       style={{ backgroundImage: `url(${cardBlog6})` }}
                     >
                       <CardBody background className={classes.cardBodyRotate}>
@@ -1001,17 +965,11 @@ export default function SectionCards() {
               </GridItem>
               <GridItem xs={12} sm={6} md={6} lg={4}>
                 <div
-                  className={
-                    classes.rotatingCardContainer +
-                    ' ' +
-                    classes.manualRotate +
-                    ' ' +
-                    activeRotate3
-                  }
+                  className={`${classes.rotatingCardContainer} ${classes.manualRotate} ${activeRotate3}`}
                 >
                   <Card className={classes.cardRotate}>
                     <div
-                      className={classes.front + ' ' + classes.wrapperWarning}
+                      className={`${classes.front} ${classes.wrapperWarning}`}
                     >
                       <CardBody className={classes.cardBodyRotate}>
                         <h5 className={classes.cardCategorySocialWhite}>
@@ -1019,12 +977,12 @@ export default function SectionCards() {
                         </h5>
                         <h4 className={classes.cardTitleWhite}>
                           <a href="#pablo" onClick={e => e.preventDefault()}>
-                            {'"'}This card is doing a full rotation, click on
-                            the rotate button{'"'}
+                            "This card is doing a full rotation, click on the
+                            rotate button"
                           </a>
                         </h4>
                         <p className={classes.cardDescriptionWhite}>
-                          Don{"'"}t be scared of the truth because we need to
+                          Don&apos;t be scared of the truth because we need to
                           restart the human foundation in truth And I love you
                           like Kanye loves Kanye I love Rick Owens’ bed design
                           but the back is...
@@ -1043,7 +1001,7 @@ export default function SectionCards() {
                       </CardBody>
                     </div>
                     <div
-                      className={classes.back + ' ' + classes.wrapperWarning}
+                      className={`${classes.back} ${classes.wrapperWarning}`}
                     >
                       <CardBody className={classes.cardBodyRotate}>
                         <h5 className={classes.cardTitleWhite}>Do more...</h5>
@@ -1092,7 +1050,7 @@ export default function SectionCards() {
                 <h4>
                   Material Kit PRO is coming with the famous colored shadows.
                   That means each image from the cards is getting an unique
-                  color shadow. You don{"'"}t have to do anything to activate
+                  color shadow. You don&apos;t have to do anything to activate
                   them, just enjoy the new look of your website.
                 </h4>
                 <br />
@@ -1212,7 +1170,7 @@ export default function SectionCards() {
                       <h6 className={classes.cardCategory}>FASHION</h6>
                     </Info>
                     <div className={classes.cardDescription}>
-                      Don{"'"}t be scared of the truth because we need to
+                      Don&apos;t be scared of the truth because we need to
                       restart the human foundation in truth And I love you like
                       Kanye loves Kanye I love Rick Owens’ bed design but the
                       back is...
@@ -1227,8 +1185,8 @@ export default function SectionCards() {
                     </h5>
                     <h4 className={classes.cardTitleWhite}>
                       <a href="#pablo" onClick={e => e.preventDefault()}>
-                        {'"'}You Don{"'"}t Have to Sacrifice Joy to Build a
-                        Fabulous Business and Life{'"'}
+                        "You Don&apos;t Have to Sacrifice Joy to Build a
+                        Fabulous Business and Life"
                       </a>
                     </h4>
                   </CardBody>
@@ -1238,12 +1196,12 @@ export default function SectionCards() {
                         <img
                           src={avatar}
                           alt="..."
-                          className={classes.imgRaised + ' ' + classes.avatar}
+                          className={`${classes.imgRaised} ${classes.avatar}`}
                         />
                         <span>Tania Andrew</span>
                       </a>
                     </div>
-                    <div className={classes.statsWhite + ' ' + classes.mlAuto}>
+                    <div className={`${classes.statsWhite} ${classes.mlAuto}`}>
                       <Favorite />
                       2.4K ·
                       <Share />
@@ -1276,7 +1234,7 @@ export default function SectionCards() {
                       </a>
                     </h4>
                     <p className={classes.cardDescription}>
-                      Don{"'"}t be scared of the truth because we need to
+                      Don&apos;t be scared of the truth because we need to
                       restart the human foundation in truth And I love you like
                       Kanye loves Kanye I love Rick Owens’ bed design but the
                       back is...
@@ -1288,12 +1246,12 @@ export default function SectionCards() {
                         <img
                           src={marc}
                           alt="..."
-                          className={classes.imgRaised + ' ' + classes.avatar}
+                          className={`${classes.imgRaised} ${classes.avatar}`}
                         />
                         <span>Mike John</span>
                       </a>
                     </div>
-                    <div className={classes.stats + ' ' + classes.mlAuto}>
+                    <div className={`${classes.stats} ${classes.mlAuto}`}>
                       <Schedule />5 min read
                     </div>
                   </CardFooter>
@@ -1331,12 +1289,12 @@ export default function SectionCards() {
                         <img
                           src={marc}
                           alt="..."
-                          className={classes.imgRaised + ' ' + classes.avatar}
+                          className={`${classes.imgRaised} ${classes.avatar}`}
                         />
                         <span>Mike John</span>
                       </a>
                     </div>
-                    <div className={classes.stats + ' ' + classes.mlAuto}>
+                    <div className={`${classes.stats} ${classes.mlAuto}`}>
                       <Schedule />5 min read
                     </div>
                   </CardFooter>
@@ -1348,19 +1306,17 @@ export default function SectionCards() {
                     </h5>
                     <h4 className={classes.cardTitleWhite}>
                       <a href="#pablo" onClick={e => e.preventDefault()}>
-                        {'"'}Focus on Your Employees{'"'}
+                        "Focus on Your Employees"
                       </a>
                     </h4>
                     <p className={classes.cardDescriptionWhite}>
-                      Don{"'"}t be scared of the truth because we need to
+                      Don&apos;t be scared of the truth because we need to
                       restart the human foundation in truth And I love you like
                       Kanye loves Kanye I love Rick Owens’ bed design but the
                       back is...
                     </p>
                     <div
-                      className={
-                        classes.stats + ' ' + classes.justifyContentCenter
-                      }
+                      className={`${classes.stats} ${classes.justifyContentCenter}`}
                     >
                       <Button color="white" round>
                         Read Article
@@ -1399,7 +1355,7 @@ export default function SectionCards() {
                       <h6 className={classes.cardCategory}>WEB DESIGNER</h6>
                     </Info>
                     <p className={classes.cardDescription}>
-                      Don{"'"}t be scared of the truth because we need to
+                      Don&apos;t be scared of the truth because we need to
                       restart the human foundation in truth And I love you like
                       Kanye loves Kanye I love Rick Owens’ bed design but the
                       back is...
@@ -1439,9 +1395,7 @@ export default function SectionCards() {
                   <CardBody plain>
                     <h4 className={classes.cardTitle}>Alec Thompson</h4>
                     <h6
-                      className={
-                        classes.cardCategory + ' ' + classes.cardDescription
-                      }
+                      className={`${classes.cardCategory} ${classes.cardDescription}`}
                     >
                       CEO / CO-FOUNDER
                     </h6>
@@ -1472,15 +1426,13 @@ export default function SectionCards() {
                   </CardAvatar>
                   <CardBody plain>
                     <h6
-                      className={
-                        classes.cardCategory + ' ' + classes.cardDescription
-                      }
+                      className={`${classes.cardCategory} ${classes.cardDescription}`}
                     >
                       CEO / CO-FOUNDER
                     </h6>
                     <h4 className={classes.cardTitle}>Alec Thompson</h4>
                     <p className={classes.cardDescription}>
-                      Don{"'"}t be scared of the truth because we need to
+                      Don&apos;t be scared of the truth because we need to
                       restart the human foundation in truth And I love you like
                       Kanye loves Kanye I love Rick Owens’ bed design but the
                       back is...

@@ -10,11 +10,11 @@ import {
   roseColor,
   grayColor,
   hexToRgb,
-} from 'assets/jss/material-kit-pro-react.js'
+} from 'assets/jss/material-kit-pro-react'
 
-import imageStyles from 'assets/jss/material-kit-pro-react/imagesStyles.js'
+import imageStyles from 'assets/jss/material-kit-pro-react/imagesStyles'
 
-import rotatingCards from 'assets/jss/material-kit-pro-react/rotatingCards.js'
+import rotatingCards from 'assets/jss/material-kit-pro-react/rotatingCards'
 
 const styles = {
   container,
@@ -35,10 +35,9 @@ const styles = {
     position: 'absolute !important',
     bottom: '15px !important',
     left: '15px !important',
-    color: whiteColor + ' !important',
+    color: `${whiteColor} !important`,
     fontSize: '1.125rem !important',
-    textShadow:
-      '0 2px 5px rgba(' + hexToRgb(grayColor[9]) + ', 0.5) !important',
+    textShadow: `0 2px 5px rgba(${hexToRgb(grayColor[9])}, 0.5) !important`,
   },
   cardTitleWhite: {
     '&, & a': {
@@ -46,7 +45,7 @@ const styles = {
       marginTop: '.625rem',
       marginBottom: '0',
       minHeight: 'auto',
-      color: whiteColor + ' !important',
+      color: `${whiteColor} !important`,
     },
   },
   cardCategory: {
@@ -72,7 +71,7 @@ const styles = {
   },
   cardCategorySocialWhite: {
     marginTop: '10px',
-    color: 'rgba(' + hexToRgb(whiteColor) + ', 0.8)',
+    color: `rgba(${hexToRgb(whiteColor)}, 0.8)`,
     '& .fab,& .fas,& .far,& .fal,& .material-icons': {
       fontSize: '22px',
       position: 'relative',
@@ -87,7 +86,7 @@ const styles = {
   },
   cardCategoryWhite: {
     marginTop: '10px',
-    color: 'rgba(' + hexToRgb(whiteColor) + ', 0.7)',
+    color: `rgba(${hexToRgb(whiteColor)}, 0.7)`,
   },
   cardCategoryFullWhite: {
     marginTop: '10px',
@@ -95,9 +94,10 @@ const styles = {
   },
   cardDescription: {
     ...description,
+    height: '100%',
   },
   cardDescriptionWhite: {
-    color: 'rgba(' + hexToRgb(whiteColor) + ', 0.8)',
+    color: `rgba(${hexToRgb(whiteColor)}, 0.8)`,
   },
   author: {
     display: 'inline-flex',
@@ -108,7 +108,7 @@ const styles = {
   authorWhite: {
     display: 'inline-flex',
     '& a': {
-      color: 'rgba(' + hexToRgb(whiteColor) + ', 0.8)',
+      color: `rgba(${hexToRgb(whiteColor)}, 0.8)`,
     },
   },
   avatar: {
@@ -119,7 +119,7 @@ const styles = {
     marginRight: '5px',
   },
   statsWhite: {
-    color: 'rgba(' + hexToRgb(whiteColor) + ', 0.8)',
+    color: `rgba(${hexToRgb(whiteColor)}, 0.8)`,
     display: 'inline-flex',
     '& .fab,& .fas,& .far,& .fal,& .material-icons': {
       position: 'relative',
@@ -164,11 +164,11 @@ const styles = {
     justifyContent: 'center !important',
   },
   iconWrapper: {
-    color: 'rgba(' + hexToRgb(whiteColor) + ', 0.76)',
+    color: `rgba(${hexToRgb(whiteColor)}, 0.76)`,
     margin: '10px auto 0',
     width: '130px',
     height: '130px',
-    border: '1px solid ' + grayColor[14],
+    border: `1px solid ${grayColor[14]}`,
     borderRadius: '50%',
     lineHeight: '174px',
     '& .fab,& .fas,& .far,& .fal,& .material-icons': {
@@ -181,7 +181,7 @@ const styles = {
     },
   },
   iconWrapperColor: {
-    borderColor: 'rgba(' + hexToRgb(whiteColor) + ', 0.25)',
+    borderColor: `rgba(${hexToRgb(whiteColor)}, 0.25)`,
   },
   iconWhite: {
     color: whiteColor,

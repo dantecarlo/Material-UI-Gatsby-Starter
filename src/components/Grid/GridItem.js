@@ -22,7 +22,7 @@ export default function GridItem(props) {
   const { children, className, ...rest } = props
   const classes = useStyles()
   return (
-    <Grid item {...rest} className={classes.grid + ' ' + className}>
+    <Grid item {...rest} className={`${classes.grid} ${className}`}>
       {children}
     </Grid>
   )
